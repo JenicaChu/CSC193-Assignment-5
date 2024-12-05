@@ -1,3 +1,10 @@
+document.addEventListener("DOMContentLoaded", () => {
+    document.getElementById("biggerButton").addEventListener("click", makeBigger);
+    document.getElementById("fancifyOn").addEventListener("click", makeFancy);
+    document.getElementById("borifyOn").addEventListener("click", makeBoring);
+    document.getElementById("mooButton").addEventListener("click", makeMoo);
+});
+
 function showAlert(){
     alert("Hello, world!");
 }
@@ -34,9 +41,3 @@ function makeMoo(){
     
 }
 
-window.onload = function(){
-    document.getElementById("biggerButton").onclick = makeBigger;
-    document.getElementById("fancifyOn").onchange = makeFancy;
-    document.getElementById("borifyOn").onchange = makeBoring;
-    document.getElementById("mooButton").onclick = makeMoo;
-}
